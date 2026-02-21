@@ -17,7 +17,18 @@
   <main class="shell" id="projects">
     <div class="layout">
       <aside class="sidebar" aria-label="연도별 프로젝트 목록">
-        <div class="years" id="years"></div>
+        <div class="sidebar-stack">
+          <section class="sidebar-card" aria-label="진행중 프로젝트">
+            <h2 class="sidebar-card-title">진행중</h2>
+            <div class="sidebar-card-body sidebar-card-body-in-progress">
+              <ul class="list" id="in-progress-list"></ul>
+            </div>
+          </section>
+          <section class="sidebar-card" aria-label="완료 프로젝트">
+            <h2 class="sidebar-card-title">완료</h2>
+            <div class="sidebar-card-body sidebar-card-body-done" id="done-years"></div>
+          </section>
+        </div>
       </aside>
 
       <section class="main" aria-live="polite">
