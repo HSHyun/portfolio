@@ -1,27 +1,302 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hshyun.github.io</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-      color: #eee;
-    }
-    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    p { color: #aaa; }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Archive Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>hshyun.github.io</h1>
-  <p>GitHub Pages 사이트입니다.</p>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand"><span class="brand-dot"></span> archive</div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell" id="projects">
+    <div class="layout">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="연도별 프로젝트 목록">
+        <div class="sidebar-header">
+          <p class="sidebar-title">Timeline</p>
+          <input class="search" id="search" placeholder="검색 (제목/태그)" aria-label="프로젝트 검색" />
+        </div>
+        <div class="years" id="years"></div>
+      </aside>
+
+      <!-- Main -->
+      <section class="main" aria-live="polite">
+        <div class="main-inner">
+          <p class="kicker" id="kicker">—</p>
+          <h1 id="title">왼쪽에서 항목을 선택하세요</h1>
+          <p class="desc" id="desc">연도별로 정리해두면 나중에 추가해도 구조가 안 무너져서 관리하기 좋아요.</p>
+
+          <div class="hero" id="hero">
+            대표 이미지 자리 (선택사항)
+          </div>
+
+          <ul class="chips" id="chips"></ul>
+
+          <div class="section">
+            <h2>What I did</h2>
+            <p id="body">프로젝트 설명 / 맡은 역할 / 배운 점 등을 여기에 표시합니다.</p>
+
+            <div class="links" id="links"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="shell" id="about" style="padding:18px 0 0;">
+      <div style="border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:#fff;">
+        <h2 style="margin:0 0 8px;font-size:16px;">About</h2>
+        <p style="margin:0;color:var(--muted);font-size:14px;">
+          여기에는 한 줄 소개, 관심 분야, 지금 배우는 것 등을 적어두면 포폴 느낌 확 살아남.
+        </p>
+      </div>
+    </section>
+
+    <section class="shell" id="contact" style="padding:18px 0;">
+      <div style="border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:#fff;">
+        <h2 style="margin:0 0 8px;font-size:16px;">Contact</h2>
+        <p style="margin:0;color:var(--muted);font-size:14px;">
+          이메일 / GitHub / 블로그 링크 넣는 자리.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // ✅ 여기만 네 데이터로 바꾸면 됨
+    const PROJECTS = [
+      {
+        id: "p-2026-01",
+        year: 2026,
+        title: "캡스톤: 학습 앱 태블릿 UI",
+        summary: "Compose 기반 태블릿 레이아웃/네비게이션 개선",
+        meta: "Android · UI/UX · 3주",
+        tags: ["Android", "Jetpack Compose", "Tablet UI"],
+        image: "", // "images/hero.png" 같은 경로 넣으면 이미지 표시됨
+        body: "태블릿에서 2-pane 구조를 적용하고, 아이콘/터치 타겟/여백을 재설계했습니다. 왼쪽 네비 + 오른쪽 콘텐츠 패턴으로 학습 흐름이 끊기지 않도록 구성.",
+        links: [
+          { label: "GitHub", url: "https://github.com/" },
+          { label: "Demo", url: "https://example.com" }
+        ]
+      },
+      {
+        id: "p-2025-01",
+        year: 2025,
+        title: "개인 프로젝트: 포트폴리오 아카이브",
+        summary: "연도별 프로젝트 정리 + 상세 뷰",
+        meta: "Web · HTML/CSS/JS",
+        tags: ["HTML", "CSS", "JavaScript"],
+        image: "",
+        body: "Figma로 대충 구조 잡고, 데이터 기반으로 리스트/상세가 바뀌는 구조로 구현. 추후 React로 옮기기 쉬운 형태로 설계.",
+        links: []
+      },
+      {
+        id: "p-2024-01",
+        year: 2024,
+        title: "스터디: JS 미니 토이프로젝트 모음",
+        summary: "작게 여러 개 만들어본 기록",
+        meta: "Web · Study",
+        tags: ["JavaScript", "Toy Project"],
+        image: "",
+        body: "작은 기능 단위로 꾸준히 만들었던 것들을 한 페이지에서 탐색 가능하게 정리.",
+        links: []
+      }
+    ];
+
+    const yearsEl = document.getElementById("years");
+    const searchEl = document.getElementById("search");
+
+    const ui = {
+      kicker: document.getElementById("kicker"),
+      title: document.getElementById("title"),
+      desc: document.getElementById("desc"),
+      hero: document.getElementById("hero"),
+      chips: document.getElementById("chips"),
+      body: document.getElementById("body"),
+      links: document.getElementById("links"),
+    };
+
+    function groupByYear(items){
+      const map = new Map();
+      for(const it of items){
+        if(!map.has(it.year)) map.set(it.year, []);
+        map.get(it.year).push(it);
+      }
+      // 최신 연도부터
+      return [...map.entries()]
+        .sort((a,b)=> b[0]-a[0])
+        .map(([year, arr]) => [year, arr]);
+    }
+
+    function matchesQuery(p, q){
+      if(!q) return true;
+      const hay = [
+        p.title, p.summary, p.meta,
+        ...(p.tags || [])
+      ].join(" ").toLowerCase();
+      return hay.includes(q.toLowerCase());
+    }
+
+    function renderSidebar(items, selectedId){
+      yearsEl.innerHTML = "";
+      const grouped = groupByYear(items);
+
+      grouped.forEach(([year, arr]) => {
+        const block = document.createElement("div");
+        block.className = "year-block";
+
+        const y = document.createElement("div");
+        y.className = "year";
+        y.textContent = year;
+
+        const ul = document.createElement("ul");
+        ul.className = "list";
+
+        arr.forEach(p => {
+          const li = document.createElement("li");
+
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "item-btn";
+          btn.setAttribute("data-id", p.id);
+          btn.setAttribute("aria-selected", String(p.id === selectedId));
+
+          btn.innerHTML = `
+            <span class="marker" aria-hidden="true"></span>
+            <span class="item-text">
+              <p class="item-title">${escapeHtml(p.title)}</p>
+              <p class="item-meta">${escapeHtml(p.meta || p.summary || "")}</p>
+            </span>
+          `;
+
+          btn.addEventListener("click", () => selectProject(p.id, true));
+          li.appendChild(btn);
+          ul.appendChild(li);
+        });
+
+        block.appendChild(y);
+        block.appendChild(ul);
+        yearsEl.appendChild(block);
+      });
+    }
+
+    function renderMain(p){
+      ui.kicker.textContent = `${p.year} · ${p.meta ?? ""}`.trim().replace(/\s·\s$/, "");
+      ui.title.textContent = p.title;
+      ui.desc.textContent = p.summary ?? "";
+
+      // hero image
+      ui.hero.innerHTML = "";
+      if(p.image){
+        const img = document.createElement("img");
+        img.alt = `${p.title} 대표 이미지`;
+        img.src = p.image;
+        ui.hero.appendChild(img);
+      } else {
+        ui.hero.textContent = "대표 이미지 자리 (선택사항)";
+      }
+
+      // tags
+      ui.chips.innerHTML = "";
+      (p.tags || []).forEach(t => {
+        const li = document.createElement("li");
+        li.className = "chip";
+        li.textContent = t;
+        ui.chips.appendChild(li);
+      });
+
+      ui.body.textContent = p.body ?? "";
+
+      // links
+      ui.links.innerHTML = "";
+      (p.links || []).forEach(l => {
+        const a = document.createElement("a");
+        a.className = "btn";
+        a.href = l.url;
+        a.target = "_blank";
+        a.rel = "noreferrer";
+        a.textContent = l.label;
+        ui.links.appendChild(a);
+      });
+
+      if((p.links || []).length === 0){
+        // 링크 없으면 숨김 느낌으로 공간만 최소화
+        ui.links.style.display = "none";
+      } else {
+        ui.links.style.display = "flex";
+      }
+    }
+
+    function selectProject(id, pushState){
+      const p = PROJECTS.find(x => x.id === id);
+      if(!p) return;
+
+      renderMain(p);
+      renderSidebar(currentFiltered(), id);
+
+      if(pushState){
+        history.pushState({ id }, "", `#${encodeURIComponent(id)}`);
+      }
+    }
+
+    function currentFiltered(){
+      const q = searchEl.value.trim();
+      return PROJECTS.filter(p => matchesQuery(p, q));
+    }
+
+    function escapeHtml(str){
+      return String(str)
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+    }
+
+    // Search handling
+    searchEl.addEventListener("input", () => {
+      const filtered = currentFiltered();
+      const selected = location.hash ? decodeURIComponent(location.hash.slice(1)) : "";
+      const stillExists = filtered.some(p => p.id === selected);
+      renderSidebar(filtered, stillExists ? selected : "");
+      if(!stillExists && filtered[0]) renderMain(filtered[0]);
+      if(filtered.length === 0){
+        ui.kicker.textContent = "—";
+        ui.title.textContent = "검색 결과가 없어요";
+        ui.desc.textContent = "다른 키워드로 검색해보세요.";
+        ui.hero.textContent = "";
+        ui.chips.innerHTML = "";
+        ui.body.textContent = "";
+        ui.links.innerHTML = "";
+        ui.links.style.display = "none";
+      }
+    });
+
+    // Back/forward support
+    window.addEventListener("popstate", (e) => {
+      const id = (e.state && e.state.id) ? e.state.id : (location.hash ? decodeURIComponent(location.hash.slice(1)) : "");
+      if(id) selectProject(id, false);
+    });
+
+    // Initial render
+    function init(){
+      const filtered = currentFiltered();
+      const fromHash = location.hash ? decodeURIComponent(location.hash.slice(1)) : "";
+      renderSidebar(filtered, fromHash);
+      const first = filtered.find(p => p.id === fromHash) || filtered[0];
+      if(first) renderMain(first);
+    }
+    init();
+  </script>
 </body>
 </html>
