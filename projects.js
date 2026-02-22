@@ -66,24 +66,43 @@ const PROJECTS = [
     ]
   },
   {
-    id: "p-2025-01",
-    status: "done",
-    year: 2025,
-    title: "개인 프로젝트: 포트폴리오 아카이브",
-    summary: "연도별 프로젝트 정리 + 상세 뷰",
-    meta: "Web · HTML/CSS/JS",
-    tags: ["HTML", "CSS", "JavaScript"],
+    id: "p-2026-03",
+    status: "in-progress",
+    year: 2026,
+    title: "프로젝트 아카이브",
+    summary: "프로젝트 아카이브 사이트 제작",
+    meta: "HTML · CSS · JavaScript",
+    project_info: "연도별로 정리한 프로젝트 아카이브 제작하기 프로젝트",
     body: [
       {
-        title: "아카이브 UI 구조 설계",
-        desc: "Figma로 정보 구조를 먼저 잡고 연도/상세 탐색 흐름을 정리",
+        title: "프로젝트 아카이브 설계",
+        desc: "과거 프로젝트 내역 수집/정리 후 구조화",
       },
       {
-        title: "데이터 기반 렌더 구조 구현",
-        desc: "리스트/상세가 데이터에 따라 바뀌도록 구성하고 확장성을 확보",
+        title: "사이트 IA/UI 설계",
+        desc: "웹 구성 및 디자인 시스템 정리",
       },
+      {
+        title: "정적 홈페이지 구현",
+        desc: "GitHub Pages 기반으로 배포 가능한 구조로 제작(HTML/CSS/JS)"
+      },
+      {
+        title: "콘텐츠 등록/유지보수 흐름 구축",
+        desc: "projects.js에 데이터 추가만으로 자동 렌더링되도록 구성"
+      },
+      {
+        title: "AI 활용",
+        desc: "레이아웃/컴포넌트 초안 생성에 AI를 활용하고 이후 직접 조정"
+      }
     ],
-    links: []
+    gallery: [
+      "images/portfolio/1.jpg",
+      "images/portfolio/2.jpg"
+    ],
+    links: [
+      { label: "GitHub", url: "https://github.com/HSHyun/portfolio" },
+      { label: "Site", url: "https://hshyun.github.io/portfolio" }, 
+    ]
   },
   {
     id: "p-2024-016",
