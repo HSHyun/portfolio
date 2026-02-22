@@ -193,6 +193,15 @@
           "type": "feat",
           "repo": "portfolio",
           "branch": "main",
+          "author": "Hyun",
+          "date": "2026-02-22 18:28",
+          "message": "이미지 확장자명 통일",
+          "sha": "0637d9e"
+        },
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
           "author": "Hyun SengHyun",
           "date": "2026-02-22 18:15",
           "message": "프로젝트 아카이브 프로젝트 추가",
