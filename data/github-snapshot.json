@@ -183,6 +183,93 @@
           "tone": "lang-tone-4"
         }
       ]
+    },
+    "HSHyun/portfolio#main": {
+      "owner": "HSHyun",
+      "repo": "portfolio",
+      "branch": "main",
+      "commits": [
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-22 18:15",
+          "message": "프로젝트 아카이브 프로젝트 추가",
+          "sha": "abfe1b6"
+        },
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-22 17:21",
+          "message": "포트폴리오 상세 UI 개선 및 GitHub 스냅샷 자동화 추가",
+          "sha": "9ef23db"
+        },
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-21 18:43",
+          "message": "현재 진행중인 프로젝트 추가",
+          "sha": "d6c1ffd"
+        },
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun",
+          "date": "2026-02-21 16:15",
+          "message": "UI 수정",
+          "sha": "0464cce"
+        },
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-21 14:57",
+          "message": "기본 틀 생성",
+          "sha": "5ab60fd"
+        },
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun",
+          "date": "2026-02-21 14:21",
+          "message": "첫 커밋",
+          "sha": "e103a85"
+        },
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-21 14:10",
+          "message": "Initial commit",
+          "sha": "535017e"
+        }
+      ],
+      "languages": [
+        {
+          "name": "JavaScript",
+          "percent": 70,
+          "tone": "lang-tone-1"
+        },
+        {
+          "name": "CSS",
+          "percent": 25,
+          "tone": "lang-tone-2"
+        },
+        {
+          "name": "HTML",
+          "percent": 5,
+          "tone": "lang-tone-3"
+        }
+      ]
     }
   }
 }
