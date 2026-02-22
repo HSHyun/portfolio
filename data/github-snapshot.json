@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "repos": {
+    "HSHyun/capstone#main": {
+      "owner": "HSHyun",
+      "repo": "capstone",
+      "branch": "main",
+      "commits": [
+        {
+          "type": "feat",
+          "repo": "capstone",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-22 13:23",
+          "message": "로그인/회원가입/게시물 기능 구현 및 로컬 postgresql 테스트",
+          "sha": "932aff4"
+        },
+        {
+          "type": "feat",
+          "repo": "capstone",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-10 08:41",
+          "message": "메인 화면 추가",
+          "sha": "8f69060"
+        },
+        {
+          "type": "feat",
+          "repo": "capstone",
+          "branch": "main",
+          "author": "Hyun",
+          "date": "2026-02-10 05:41",
+          "message": "안드로이드 프로젝트 생성",
+          "sha": "3eaa5cf"
+        }
+      ],
+      "languages": [
+        {
+          "name": "Kotlin",
+          "percent": 80,
+          "tone": "lang-tone-1"
+        },
+        {
+          "name": "Python",
+          "percent": 20,
+          "tone": "lang-tone-2"
+        }
+      ]
+    },
+    "HSHyun/JPStudy#main": {
+      "owner": "HSHyun",
+      "repo": "JPStudy",
+      "branch": "main",
+      "commits": [
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-21 18:31",
+          "message": "supabase에 데이터 삽입 및 기초 기능 만듬",
+          "sha": "35d3108"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-01-26 21:40",
+          "message": "N1.csv를 N1.json으로 변경",
+          "sha": "8303c94"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun",
+          "date": "2026-01-26 20:56",
+          "message": "N1 scan, csv 추가",
+          "sha": "9a2d869"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-01-21 20:02",
+          "message": "N2.json 추가",
+          "sha": "ac09076"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-01-21 16:19",
+          "message": "N2 스캔본 추가",
+          "sha": "6e8523c"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-01-20 19:07",
+          "message": "N3.json 추가",
+          "sha": "b3a8184"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-01-20 15:28",
+          "message": "json에 레벨 추가",
+          "sha": "a7e4515"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-01-19 21:31",
+          "message": "N4 json 추가",
+          "sha": "85b72d7"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-01-19 15:52",
+          "message": "n4 스캔본 추가",
+          "sha": "a084494"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-01-16 19:21",
+          "message": "N5 모든 단어 json으로 추출",
+          "sha": "6f7c07e"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun",
+          "date": "2026-01-16 16:14",
+          "message": "N5 스캔 추가",
+          "sha": "578f50f"
+        },
+        {
+          "type": "feat",
+          "repo": "JPStudy",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-01-12 11:55",
+          "message": "책 단어 암기 pdf",
+          "sha": "9eaba92"
+        }
+      ],
+      "languages": [
+        {
+          "name": "CSS",
+          "percent": 37,
+          "tone": "lang-tone-1"
+        },
+        {
+          "name": "JavaScript",
+          "percent": 32,
+          "tone": "lang-tone-2"
+        },
+        {
+          "name": "HTML",
+          "percent": 21,
+          "tone": "lang-tone-3"
+        },
+        {
+          "name": "Other",
+          "percent": 10,
+          "tone": "lang-tone-4"
+        }
+      ]
+    }
+  }
+}
