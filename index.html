@@ -37,20 +37,35 @@
           <p class="main-home-desc">연도별로 정리한 프로젝트 아카이브입니다.<br />왼쪽에서 연도를 펼치고 항목을 선택하면 상세 내용을 볼 수 있어요.</p>
         </div>
         <div class="main-project main-inner" id="main-project">
-          <p class="kicker" id="kicker">—</p>
+          <div class="meta-row">
+            <p class="kicker" id="kicker">—</p>
+            <div class="links links--meta" id="links"></div>
+          </div>
           <h1 id="title">—</h1>
           <p class="desc" id="desc">—</p>
           <div class="hero" id="hero"></div>
           <ul class="chips" id="chips"></ul>
           <div class="section">
+            <h2>Project</h2>
+            <p id="project-body">—</p>
+          </div>
+          <div class="section">
             <h2>What I did</h2>
-            <p id="body">—</p>
-            <div class="links" id="links"></div>
+            <ul id="whatid-body" class="whatid-list">
+              <li>—</li>
+            </ul>
           </div>
         </div>
       </section>
     </div>
   </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="닫기">×</button>
+    <button type="button" class="lightbox-nav lightbox-nav-prev" id="lightbox-prev" aria-label="이전 이미지">‹</button>
+    <img class="lightbox-image" id="lightbox-image" alt="확대 이미지" />
+    <button type="button" class="lightbox-nav lightbox-nav-next" id="lightbox-next" aria-label="다음 이미지">›</button>
+  </div>
 
   <script src="projects.js"></script>
   <script src="app.js"></script>
