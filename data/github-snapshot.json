@@ -47,6 +47,119 @@
         }
       ]
     },
+    "HSHyun/discordbot#main": {
+      "owner": "HSHyun",
+      "repo": "discordbot",
+      "branch": "main",
+      "commits": [
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Ubuntu",
+          "date": "2025-11-24 16:22",
+          "message": "기존에는 store_* 실행할때마다 계속 create table을 시도해서 데드락이 계속 걸렸던 것을 빼서 해결함. 어차피 db에 테이블은 다 이미 만들어져서 빼도 생관없을 듯 함. 그리고 자꾸 rabbitmq에 메세지 발행이 안되는것처럼 보였는데 알고보니까 무료서버라서 디스크가 꽉차서 rabbitmq측에서 메세지 받으면 바바로 드랍해서 안되는거였던것. 용량을 8에서 20으로 늘림. 이것도 막힐정도면 EC2를 서버용/워커용 나누던가 해야할듯",
+          "sha": "1a30084"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2025-11-20 19:56",
+          "message": "bug fix",
+          "sha": "4062585"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Ubuntu",
+          "date": "2025-11-20 19:41",
+          "message": "aws에 discord 봇도 올려서 24시간 가동 완료. 테스트 정상작동 확인.",
+          "sha": "786e422"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2025-11-20 19:17",
+          "message": "파일 디렉토리 정리 및 리팩토링",
+          "sha": "6b5125a"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Ubuntu",
+          "date": "2025-11-20 17:56",
+          "message": "aws의 EC2상에서 rabbitmq, rds 연동 모두 완료. 봇 명령어 생성 완료. 기능은 다 완성함",
+          "sha": "76b5904"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2025-11-15 17:50",
+          "message": "기존 codex에서 gemini api로 리팩토링, rabbitmq 도입 완료 및 로컬에서 테스트 모두 완료.",
+          "sha": "7b7feae"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2025-11-14 17:19",
+          "message": "기존 로컬에서 돌리던 db랑 이런것들 다 aws에 배포하였고, aws의 db랑 EC2랑 잘 연결 되는것까지 확인 완료.",
+          "sha": "1ec4c6e"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2025-11-14 13:01",
+          "message": ".gitignore 업데이트",
+          "sha": "1d41acf"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2025-11-05 08:46",
+          "message": "지금까지 일단 개발한것..",
+          "sha": "cec74b1"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2025-09-24 17:03",
+          "message": "초대 완료",
+          "sha": "8cd8b25"
+        },
+        {
+          "type": "feat",
+          "repo": "discordbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2025-09-24 15:53",
+          "message": "Initial commit",
+          "sha": "cbdef1e"
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "percent": 100,
+          "tone": "lang-tone-1"
+        }
+      ]
+    },
     "HSHyun/JPStudy#main": {
       "owner": "HSHyun",
       "repo": "JPStudy",
@@ -184,11 +297,52 @@
         }
       ]
     },
+    "HSHyun/ktbot#main": {
+      "owner": "HSHyun",
+      "repo": "ktbot",
+      "branch": "main",
+      "commits": [
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-24 17:41",
+          "message": "oracle mysql을 점프서버를 이용해서 접속 및 테스트 성공",
+          "sha": "0f2b14a"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-23 18:05",
+          "message": "기존에 만들었던 이슈 정리해주는 디스코드 봇을 카카오톡 봇으로 변경 및 개선하기 위해서 Groq api 사용해봄",
+          "sha": "40a940b"
+        }
+      ],
+      "languages": [
+        {
+          "name": "Python",
+          "percent": 100,
+          "tone": "lang-tone-1"
+        }
+      ]
+    },
     "HSHyun/portfolio#main": {
       "owner": "HSHyun",
       "repo": "portfolio",
       "branch": "main",
       "commits": [
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-02-24 18:07",
+          "message": "카카오톡 봇 프로젝트 추가",
+          "sha": "ccb29ee"
+        },
         {
           "type": "feat",
           "repo": "portfolio",
