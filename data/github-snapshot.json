@@ -307,6 +307,15 @@
           "repo": "ktbot",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-07 17:47",
+          "message": "레딧 API 수집 및 MySQL 저장 파이프라인 추가",
+          "sha": "7642e95"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-02-24 17:41",
           "message": "oracle mysql을 점프서버를 이용해서 접속 및 테스트 성공",
           "sha": "0f2b14a"
