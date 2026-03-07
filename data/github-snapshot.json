@@ -307,6 +307,15 @@
           "repo": "ktbot",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-07 19:14",
+          "message": "레딧 수집 파이프라인 개선 및 source 활성화 기반 크롤링 적용",
+          "sha": "630f99f"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-07 17:47",
           "message": "레딧 API 수집 및 MySQL 저장 파이프라인 추가",
           "sha": "7642e95"
