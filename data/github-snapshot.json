@@ -11,6 +11,24 @@
           "repo": "capstone",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-14 20:44",
+          "message": "uploads 추적 제거 및 gitignore 반영",
+          "sha": "a554da3"
+        },
+        {
+          "type": "feat",
+          "repo": "capstone",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-14 20:42",
+          "message": "업로드·OCR·구문분석 Mock 파이프라인 연동 및 documents 스키마 기반 API 전환",
+          "sha": "c941992"
+        },
+        {
+          "type": "feat",
+          "repo": "capstone",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-02-22 13:23",
           "message": "로그인/회원가입/게시물 기능 구현 및 로컬 postgresql 테스트",
           "sha": "932aff4"
@@ -37,12 +55,12 @@
       "languages": [
         {
           "name": "Kotlin",
-          "percent": 80,
+          "percent": 76,
           "tone": "lang-tone-1"
         },
         {
           "name": "Python",
-          "percent": 20,
+          "percent": 24,
           "tone": "lang-tone-2"
         }
       ]
