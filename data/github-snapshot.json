@@ -324,6 +324,24 @@
           "type": "feat",
           "repo": "ktbot",
           "branch": "main",
+          "author": "HSHyun",
+          "date": "2026-03-17 17:35",
+          "message": "긁어오는 게시물 크기 50->100 으로 증가",
+          "sha": "891fbea"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-17 17:16",
+          "message": "레딧 플레어 필터 추가, item_summary 기반 digest 생성 구조로 개선",
+          "sha": "39a7ad7"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
           "author": "Hyun SengHyun",
           "date": "2026-03-07 19:14",
           "message": "레딧 수집 파이프라인 개선 및 source 활성화 기반 크롤링 적용",
