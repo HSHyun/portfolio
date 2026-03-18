@@ -324,6 +324,15 @@
           "type": "feat",
           "repo": "ktbot",
           "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-18 16:09",
+          "message": "RabbitMQ 워커 추가 및 item 요약 비동기 처리 적용",
+          "sha": "557c593"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
           "author": "HSHyun",
           "date": "2026-03-17 17:35",
           "message": "긁어오는 게시물 크기 50->100 으로 증가",
