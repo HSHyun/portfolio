@@ -11,6 +11,15 @@
           "repo": "capstone",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-22 16:38",
+          "message": "Azure DB·Blob 연동, documents 기반 분석 파이프라인 개발",
+          "sha": "086ff71"
+        },
+        {
+          "type": "feat",
+          "repo": "capstone",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-14 20:44",
           "message": "uploads 추적 제거 및 gitignore 반영",
           "sha": "a554da3"
@@ -55,12 +64,12 @@
       "languages": [
         {
           "name": "Kotlin",
-          "percent": 76,
+          "percent": 75,
           "tone": "lang-tone-1"
         },
         {
           "name": "Python",
-          "percent": 24,
+          "percent": 25,
           "tone": "lang-tone-2"
         }
       ]
@@ -320,6 +329,24 @@
       "repo": "ktbot",
       "branch": "main",
       "commits": [
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-22 18:26",
+          "message": "digest 요약해주는 오케스트레이터 구현",
+          "sha": "62add12"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-22 17:10",
+          "message": "hours 마다 요약 코드 추가",
+          "sha": "b7c5a16"
+        },
         {
           "type": "feat",
           "repo": "ktbot",
