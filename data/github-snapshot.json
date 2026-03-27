@@ -11,6 +11,15 @@
           "repo": "capstone",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-27 20:49",
+          "message": "지문 분석 요청을 비동기 상태조회 방식으로 전환하고 React 기반 구문분석 결과 뷰를 앱에 연동했다",
+          "sha": "56d00eb"
+        },
+        {
+          "type": "feat",
+          "repo": "capstone",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-22 16:38",
           "message": "Azure DB·Blob 연동, documents 기반 분석 파이프라인 개발",
           "sha": "086ff71"
@@ -64,12 +73,12 @@
       "languages": [
         {
           "name": "Kotlin",
-          "percent": 75,
+          "percent": 70,
           "tone": "lang-tone-1"
         },
         {
           "name": "Python",
-          "percent": 25,
+          "percent": 30,
           "tone": "lang-tone-2"
         }
       ]
