@@ -11,6 +11,15 @@
           "repo": "capstone",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-28 13:51",
+          "message": "커밋 안된 내역들 추가",
+          "sha": "a3bd5dd"
+        },
+        {
+          "type": "feat",
+          "repo": "capstone",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-27 20:49",
           "message": "지문 분석 요청을 비동기 상태조회 방식으로 전환하고 React 기반 구문분석 결과 뷰를 앱에 연동했다",
           "sha": "56d00eb"
@@ -73,13 +82,18 @@
       "languages": [
         {
           "name": "Kotlin",
-          "percent": 70,
+          "percent": 47,
           "tone": "lang-tone-1"
         },
         {
-          "name": "Python",
-          "percent": 30,
+          "name": "TypeScript",
+          "percent": 32,
           "tone": "lang-tone-2"
+        },
+        {
+          "name": "Python",
+          "percent": 20,
+          "tone": "lang-tone-3"
         }
       ]
     },
