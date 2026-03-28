@@ -357,6 +357,15 @@
           "repo": "ktbot",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-28 18:43",
+          "message": "digest 슬롯 경계 고정과 카카오 구독용 FastAPI 추가",
+          "sha": "83c1cf4"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-22 18:26",
           "message": "digest 요약해주는 오케스트레이터 구현",
           "sha": "62add12"
