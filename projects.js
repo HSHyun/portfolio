@@ -39,7 +39,7 @@ const PROJECTS = [
       "images/running/7.png",
     ],
     links: [
-      {label: "Github", url: "https://github.com/HSHyun/capstone"}
+      {label: "Github", url: "https://github.com/CapstoneTeamRunning/appppp"}
     ]
   },
   {

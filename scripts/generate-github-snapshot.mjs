@@ -158,7 +158,11 @@ async function main() {
   const { projects, out } = parseArgs(process.argv.slice(2));
   const projectsPath = path.resolve(projects);
   const outputPath = path.resolve(out);
-  const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
+  const token =
+    process.env.PORTFOLIO_GITHUB_TOKEN ||
+    process.env.GH_TOKEN ||
+    process.env.GITHUB_TOKEN ||
+    "";
   const headers = buildRequestHeaders(token);
 
   const projectList = await loadProjects(projectsPath);

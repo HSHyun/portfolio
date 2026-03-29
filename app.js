@@ -32,9 +32,12 @@ const DEFAULT_SNAPSHOT_URLS = (() => {
     : "";
 
   const host = (typeof location !== "undefined" && location.hostname) ? location.hostname : "";
+  const pathname = (typeof location !== "undefined" && location.pathname) ? location.pathname : "/";
   const owner = host.endsWith(".github.io") ? host.split(".")[0] : "";
-  const rawUrl = owner
-    ? `https://raw.githubusercontent.com/${encodeURIComponent(owner)}/${encodeURIComponent(owner)}.github.io/data/data/github-snapshot.json`
+  const repoFromPath = pathname.split("/").filter(Boolean)[0] || "";
+  const repo = owner ? (repoFromPath || `${owner}.github.io`) : "";
+  const rawUrl = owner && repo
+    ? `https://raw.githubusercontent.com/${encodeURIComponent(owner)}/${encodeURIComponent(repo)}/data/data/github-snapshot.json`
     : "";
 
   return [override, rawUrl, "data/github-snapshot.json"].filter(Boolean);

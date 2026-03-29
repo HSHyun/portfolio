@@ -31,6 +31,7 @@ jobs:
 
       - name: Generate snapshot JSON
         env:
+          PORTFOLIO_GITHUB_TOKEN: ${{ secrets.PORTFOLIO_GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           node scripts/generate-github-snapshot.mjs \
