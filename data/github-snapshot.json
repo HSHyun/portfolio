@@ -357,6 +357,33 @@
           "repo": "ktbot",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-29 18:49",
+          "message": "불필요한 중복 코드, 헬퍼함수 정리",
+          "sha": "9ef1fb7"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-29 18:39",
+          "message": "clientExtra에서 정보가져오도록 변경",
+          "sha": "75ddb86"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-29 18:28",
+          "message": "main에서 불필요한 코드 제거 및 구독 스키마 변경",
+          "sha": "5cf8f6d"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-28 18:43",
           "message": "digest 슬롯 경계 고정과 카카오 구독용 FastAPI 추가",
           "sha": "83c1cf4"
