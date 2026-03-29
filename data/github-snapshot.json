@@ -357,6 +357,33 @@
           "repo": "ktbot",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-29 19:10",
+          "message": "구독 완료 포멧 변경",
+          "sha": "38cf99f"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-29 19:05",
+          "message": "구독 완료 포멧 변경",
+          "sha": "2695df7"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-29 18:57",
+          "message": "구독 설정 응답 문구 변경",
+          "sha": "cd4d99d"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-29 18:49",
           "message": "불필요한 중복 코드, 헬퍼함수 정리",
           "sha": "9ef1fb7"
@@ -483,6 +510,24 @@
       "repo": "portfolio",
       "branch": "main",
       "commits": [
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-29 19:43",
+          "message": "Running의 깃허브 링크 변경",
+          "sha": "2777672"
+        },
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-03-29 19:35",
+          "message": "포트폴리오 GitHub 스냅샷 경로 수정 및 비공개 레포 지원 추가",
+          "sha": "89f9810"
+        },
         {
           "type": "feat",
           "repo": "portfolio",
