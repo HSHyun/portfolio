@@ -357,6 +357,15 @@
           "repo": "ktbot",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-30 18:26",
+          "message": "카카오 구독 조회/해지 흐름 및 응답 문구 정리",
+          "sha": "7800d82"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-29 19:10",
           "message": "구독 완료 포멧 변경",
           "sha": "38cf99f"
