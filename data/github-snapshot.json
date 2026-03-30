@@ -357,6 +357,24 @@
           "repo": "ktbot",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-03-30 20:21",
+          "message": "디스코드 구독 확장 및 digest KST 슬롯 기준으로 변경",
+          "sha": "686f3b9"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "HSHyun",
+          "date": "2026-03-30 19:14",
+          "message": "온디맨드 digest 조회 추가 및 일반 챗봇으론 진행이 불가능하여 디스코드 알림으로 변경",
+          "sha": "4a12546"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-30 18:26",
           "message": "카카오 구독 조회/해지 흐름 및 응답 문구 정리",
           "sha": "7800d82"
