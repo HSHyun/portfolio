@@ -16,6 +16,7 @@ const ui = {
   chips: document.getElementById("chips"),
   projectBody: document.getElementById("project-body"),
   whatIdBody: document.getElementById("whatid-body"),
+  learnedBody: document.getElementById("learned-body"),
   links: document.getElementById("links"),
 };
 let heroRenderToken = 0;
@@ -517,7 +518,8 @@ function renderMain(p){
 
   const projectText = String(p.project_info ?? "").trim();
   ui.projectBody.textContent = projectText || "프로젝트 설명이 아직 없습니다.";
-  ui.whatIdBody.innerHTML = buildWhatIdMarkup(p.body);
+  ui.whatIdBody.innerHTML = buildDetailListMarkup(p.body, "세부 작업 내용을 곧 정리할게요.");
+  ui.learnedBody.innerHTML = buildDetailListMarkup(p.learned, "이 프로젝트를 통해 배운 점을 곧 정리할게요.");
   ui.links.innerHTML = "";
   const visibleLinks = (p.links || []).filter((l) => {
     const label = String(l?.label || "").trim().toLowerCase();
@@ -541,9 +543,9 @@ function renderMain(p){
   }
 }
 
-function buildWhatIdMarkup(body){
-  if (Array.isArray(body)) {
-    const items = body
+function buildDetailListMarkup(itemsOrText, emptyMessage){
+  if (Array.isArray(itemsOrText)) {
+    const items = itemsOrText
       .map((item) => ({
         title: String(item?.title ?? "").trim(),
         desc: String(item?.desc ?? "").trim(),
@@ -560,12 +562,12 @@ function buildWhatIdMarkup(body){
     }
   }
 
-  const whatIdText = String(body ?? "").trim();
-  if (!whatIdText) {
-    return "<li><p class=\"whatid-item-title\">세부 작업 내용을 곧 정리할게요.</p></li>";
+  const contentText = String(itemsOrText ?? "").trim();
+  if (!contentText) {
+    return `<li><p class="whatid-item-title">${escapeHtml(emptyMessage)}</p></li>`;
   }
 
-  const items = whatIdText
+  const items = contentText
     .split(/\r?\n/)
     .map((line) => line.trim())
     .filter(Boolean);
