@@ -210,148 +210,38 @@
         }
       ]
     },
-    "HSHyun/JPStudy#main": {
-      "owner": "HSHyun",
-      "repo": "JPStudy",
-      "branch": "main",
-      "commits": [
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-02-21 18:31",
-          "message": "supabase에 데이터 삽입 및 기초 기능 만듬",
-          "sha": "35d3108"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-01-26 21:40",
-          "message": "N1.csv를 N1.json으로 변경",
-          "sha": "8303c94"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun",
-          "date": "2026-01-26 20:56",
-          "message": "N1 scan, csv 추가",
-          "sha": "9a2d869"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-01-21 20:02",
-          "message": "N2.json 추가",
-          "sha": "ac09076"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-01-21 16:19",
-          "message": "N2 스캔본 추가",
-          "sha": "6e8523c"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-01-20 19:07",
-          "message": "N3.json 추가",
-          "sha": "b3a8184"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-01-20 15:28",
-          "message": "json에 레벨 추가",
-          "sha": "a7e4515"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-01-19 21:31",
-          "message": "N4 json 추가",
-          "sha": "85b72d7"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-01-19 15:52",
-          "message": "n4 스캔본 추가",
-          "sha": "a084494"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-01-16 19:21",
-          "message": "N5 모든 단어 json으로 추출",
-          "sha": "6f7c07e"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun",
-          "date": "2026-01-16 16:14",
-          "message": "N5 스캔 추가",
-          "sha": "578f50f"
-        },
-        {
-          "type": "feat",
-          "repo": "JPStudy",
-          "branch": "main",
-          "author": "Hyun SengHyun",
-          "date": "2026-01-12 11:55",
-          "message": "책 단어 암기 pdf",
-          "sha": "9eaba92"
-        }
-      ],
-      "languages": [
-        {
-          "name": "CSS",
-          "percent": 37,
-          "tone": "lang-tone-1"
-        },
-        {
-          "name": "JavaScript",
-          "percent": 32,
-          "tone": "lang-tone-2"
-        },
-        {
-          "name": "HTML",
-          "percent": 21,
-          "tone": "lang-tone-3"
-        },
-        {
-          "name": "Other",
-          "percent": 10,
-          "tone": "lang-tone-4"
-        }
-      ]
-    },
     "HSHyun/ktbot#main": {
       "owner": "HSHyun",
       "repo": "ktbot",
       "branch": "main",
       "commits": [
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-04-05 16:56",
+          "message": "digest 안정화, 이미지 요약 지원, 불필요 코드 정리",
+          "sha": "35c280a"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-04-05 16:17",
+          "message": "불필요한 systemd 파일 제거",
+          "sha": "bc596ae"
+        },
+        {
+          "type": "feat",
+          "repo": "ktbot",
+          "branch": "main",
+          "author": "Hyun SengHyun",
+          "date": "2026-04-05 16:15",
+          "message": "디스코드 자동 발송 sender와 채널 구독 기능 추가",
+          "sha": "f2d4b10"
+        },
         {
           "type": "feat",
           "repo": "ktbot",
@@ -542,6 +432,15 @@
           "repo": "portfolio",
           "branch": "main",
           "author": "Hyun SengHyun",
+          "date": "2026-04-05 18:23",
+          "message": "프로젝트 상세에 What I learned 섹션 추가 및 프로젝트 내용 정리",
+          "sha": "a594f6b"
+        },
+        {
+          "type": "feat",
+          "repo": "portfolio",
+          "branch": "main",
+          "author": "Hyun SengHyun",
           "date": "2026-03-29 19:43",
           "message": "Running의 깃허브 링크 변경",
           "sha": "2777672"
@@ -640,12 +539,12 @@
       "languages": [
         {
           "name": "JavaScript",
-          "percent": 70,
+          "percent": 72,
           "tone": "lang-tone-1"
         },
         {
           "name": "CSS",
-          "percent": 25,
+          "percent": 23,
           "tone": "lang-tone-2"
         },
         {
